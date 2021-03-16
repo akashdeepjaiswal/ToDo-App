@@ -11,7 +11,7 @@ function Note(props) {
     <div className="note" >
       <h1>{props.note.title}</h1>
       <p>{props.note.content}</p>
-      <Link className="link" to={"/edit/" + props.note._id}> Edit </Link>
+      
       <a
         href="#"
         onClick={() => {
