@@ -24,7 +24,7 @@ const notesRouter = require('./routes/notes');
 
 app.use('/notes', notesRouter);
 
-app.use(express.static('../client/build'));
+app.use(express.static('./client/build'));
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
