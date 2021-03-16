@@ -57,8 +57,10 @@ function TextArea(props) {
       );
     } else {
       return (
+        
         <div className="conatiner content__textArea">
           {/* {console.log(props.display_note.length)} */}
+          <center>
           <form>
             <div class="row">
               <div class="col-25">
@@ -96,14 +98,18 @@ function TextArea(props) {
               <button onClick={submitNote }> Add</button>
             </div>
           </form>
+          </center>
         </div>
+        
       );
     }
   } 
   else {
     return (
+     
       <div className="conatiner content__textArea">
         {/* {console.log(props.display_note.length)} */}
+        <center>
         <form>
           <div class="row">
             <div class="col-25">
@@ -141,7 +147,9 @@ function TextArea(props) {
             <button onClick={submitNote}> Add</button>
           </div>
         </form>
+        </center>
       </div>
+      
     );
   }
 }
