@@ -1,0 +1,11 @@
+.app__content{
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+@media(max-width:660px){
+  .app__content{
+    flex-direction: column;
+
+  }
+}
