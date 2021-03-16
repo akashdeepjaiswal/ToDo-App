@@ -5,21 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd ../client && npm run build",
-    "install-client": "cd ../client && npm install",
+    "build": "cd ./client && npm run build",
+    "install-client": "cd ./client && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
     "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akashdeepjaiswal/todo-app.git"
+    "url": "git+https://github.com/akashdeepjaiswal/todo-App.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/akashdeepjaiswal/todo-app/issues"
+    "url": "https://github.com/akashdeepjaiswal/todo-App/issues"
   },
-  "homepage": "https://github.com/akashdeepjaiswal/todo-app#readme",
+  "homepage": "https://github.com/akashdeepjaiswal/todo-App#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
