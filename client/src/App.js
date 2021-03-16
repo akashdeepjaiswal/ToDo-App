@@ -21,7 +21,7 @@ function App() {
   }
 
   function deleteNote(id) {
-    axios.delete("http://localhost:5000/notes/" + id).then((response) => {
+    axios.delete("/notes/" + id).then((response) => {
       console.log(response.data);
     });
 
@@ -36,7 +36,7 @@ function App() {
     // POST request using axios inside useEffect React hook
     const fetchdata = async () => {
       await axios
-        .get("http://localhost:5000/notes")
+        .get("/notes")
         .then((res) => {
           console.log(res.data);
           setNotes(res.data);

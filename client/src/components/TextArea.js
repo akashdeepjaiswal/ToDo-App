@@ -27,7 +27,7 @@ function TextArea(props) {
     event.preventDefault();
 
     // POST request using axios
-    axios.post("http://localhost:5000/notes/add", note).then((res) => {
+    axios.post("/notes/add", note).then((res) => {
       // console.log(res.data);
       {
         props.onAdd(note);
