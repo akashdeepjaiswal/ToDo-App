@@ -6,8 +6,8 @@ function Navbar(props) {
 
   return (
     <div id="nav" className="container" >
-     
-        <ul className="nav__items nav__buttons">
+     <h2 className="heading"><i class="far fa-clipboard"></i> Keep your Daily Notes</h2>
+        <ul className="nav__items">
          <button 
          onClick= { ()=> props.add_Note(true) }
          className="add_button" 
@@ -15,18 +15,24 @@ function Navbar(props) {
          New Note
         
          </button>
-        </ul>
-        <ul className="nav__items">
-          <li>
-            <input
-              key="random1"
-              placeholder="search notes"    
-            />
-          </li>
-        </ul>     
+        </ul>  
     </div>
   );
 }
 
 export default Navbar;
 
+
+
+
+
+
+//please ignore
+{/* <ul className="nav__items">
+<li>
+  <input
+    key="random1"
+    placeholder="search notes"    
+  />
+</li>
+</ul>    */}
