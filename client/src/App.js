@@ -21,7 +21,8 @@ function App() {
   }
 
   function deleteNote(id) {
-    axios.delete("/notes/" + id).then((response) => {
+    axios.delete("/notes/" + id).
+      then((response) => {
       console.log(response.data);
     });
 
@@ -38,7 +39,7 @@ function App() {
       await axios
         .get("/notes")
         .then((res) => {
-          console.log(res.data);
+          console.log("within useeffect",res.data);
           setNotes(res.data);
         })
         .catch((error) => {
@@ -53,7 +54,6 @@ function App() {
     setShowNote(item);
     add_blankNote(false);
   }
-
   //only setting to true so that when add button is clicked
   function add_blankNote(status) {
     console.log("add_new_note working before", blankNote);

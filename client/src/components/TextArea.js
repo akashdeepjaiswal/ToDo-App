@@ -46,8 +46,7 @@ function TextArea(props) {
     if (Object.keys(props.display_note).length > 0) {
       return (
         <div className="textarea_container">
-          <div className="textarea_note_display">
-            
+          <div className="textarea_note_display"> 
             <label for="title">Title</label>
             <h1>{props.display_note.title}</h1>
             <label for="title">Content</label>

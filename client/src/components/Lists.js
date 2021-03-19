@@ -11,10 +11,8 @@ function Lists(props) {
                 props.list.map((item) => (
                     <div className="lists__item" key={item._id}  
                     onClick={()=>{
-                        
-                        {props.whenClicked(item)} 
-                        
-                        }} >
+                            { props.whenClicked(item)} }
+                        } >
 
                        <Note 
                         note={item} 

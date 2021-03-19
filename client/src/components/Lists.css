@@ -1,21 +1,25 @@
 .content__lists{
-    background-color: bisque;
+    background-color: #c9d6df;
     height: 90vh;
     overflow-y: scroll;
-    /* flex: 0.3; */
+    /* align-items: center; */
     }
 
 .lists__item{
-
     box-shadow: 0 2px 5px #ccc;
     background: #fff;
     border-radius: 7px;
     margin: 16px ;
     width: 360px;
-    height: 100px;    
-
+    height: 100px; 
 }    
 
 .lists__item h1{
     font-size: 1.1rem;
 }    
+
+@media screen and (max-width: 600px) {
+    .lists__item{
+    width: auto;
+    }
+}

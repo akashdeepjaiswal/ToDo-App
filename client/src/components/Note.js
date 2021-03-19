@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import "./Note.css"
 
 function Note(props) {
-  function handleClick() {
-    props.onDelete(props.id);
-  }
+  // function handleClick() {
+  //   props.onDelete(props.id);
+  // }
 
   return (
     <div className="note" >
@@ -20,8 +20,9 @@ function Note(props) {
           
         }}
       >
-        Delete
+        <i class="fas fa-trash icon"></i>
       </a>
+      
     </div>
   );
 }

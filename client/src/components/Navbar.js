@@ -12,7 +12,7 @@ function Navbar(props) {
          onClick= { ()=> props.add_Note(true) }
          className="add_button" 
          >
-         ADD New Note
+         New Note
         
          </button>
         </ul>
@@ -20,8 +20,7 @@ function Navbar(props) {
           <li>
             <input
               key="random1"
-              placeholder="search notes"
-             
+              placeholder="search notes"    
             />
           </li>
         </ul>     
