@@ -16,7 +16,7 @@
 .textarea_container{
     /* background-color: lightsteelblue; */
     padding: 2rem;
-    max-width:  50%;
+    width:  60%;
     margin : 1% 4%;
 
 }
@@ -99,7 +99,7 @@ label {
       margin-left: 3%;
     }
     .textarea_container{
-      max-width:  auto;
+      width:  auto;
       margin: 4%;
     }
     .textarea_note_display p{
