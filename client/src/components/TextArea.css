@@ -99,7 +99,11 @@ label {
       margin-left: 3%;
     }
     .textarea_container{
-      width:  auto;
+      max-width:  auto;
       margin: 4%;
     }
+    .textarea_note_display p{
+      font-size: 1.15rem;
+    }
+    
   }   
