@@ -11,7 +11,13 @@ function App() {
   const [notes, setNotes] = useState([]);
   const [showNote, setShowNote] = useState({});
   const [blankNote, setblankNote] = useState(false);
-  console.log("initial", blankNote);
+  // console.log("initial", blankNote);
+  // const [toggleList, setToggleList] = useState(true)
+
+  // function toggle_List() {
+  //   setToggleList(toggleList=>!toggleList);
+  // }
+
 
   function addNote(newNote) {
     // console.log(note)
@@ -61,17 +67,22 @@ function App() {
   }
 
   return (
-    <Router>
+    // <Router>
+      // <Route path="/">
       <div className="app">
         <div className="app__navbar"></div>
-        <Navbar add_Note={add_blankNote} />
+        <Navbar 
+        add_Note={add_blankNote} 
+        // show_List={toggle_List}  
+        />
 
         <div className="app__content">
-          <Route path="/">
+          
             <Lists
               list={notes}
               delete_Note={deleteNote}
               whenClicked={show_Note}
+              // showList={toggleList}
             />
 
             <TextArea
@@ -81,10 +92,11 @@ function App() {
               // remove_Note={remove_blankNote}
               // whenClicked={show_Note}
             />
-          </Route>
+
         </div>
       </div>
-    </Router>
+      // </Route>
+    // </Router>
   );
 }
 

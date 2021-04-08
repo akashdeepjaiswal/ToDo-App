@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./TextArea.css";
 import axios from "axios";
 // import Note from "./Note";
@@ -25,14 +25,16 @@ function TextArea(props) {
 
   function submitNote(event) {
     event.preventDefault();
-
     // POST request using axios
-    axios.post("/notes/add", note).then((res) => {
-      // console.log(res.data);
+    axios.post("/notes/add", note)
+    .then((res) => {
+      // console.log("added data to moo=ngo00oooo ",res.data);
       {
         props.onAdd(note);
-     
       }
+    })
+    .catch((error) => {
+      console.log("error found: ",error);
     });
 
     setNote({
@@ -43,6 +45,8 @@ function TextArea(props) {
 
 
   if (!props.add_Note) {
+    // console.log("Object.keys(props.display_note)",Object.keys(props.display_note));
+    // console.log("props.display_note",props.display_note);
     if (Object.keys(props.display_note).length > 0) {
       return (
         <div className="textarea_container">
@@ -52,6 +56,12 @@ function TextArea(props) {
             <label for="title">Content</label>
             <p>{props.display_note.content}</p>
           </div>
+          {/* <button 
+           // onClick= { ()=> props.show_List() }
+          className="edit_button" 
+          >
+          Edit
+        </button> */}
         </div>
       );
     } else {

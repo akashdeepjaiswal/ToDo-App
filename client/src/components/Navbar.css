@@ -1,59 +1,46 @@
-#nav{
-display: flex;
-justify-content: space-evenly ;
-background-color: darkslategray;
+#nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: darkslategray;
 }
 
-.nav__items li{
+.nav__items li {
     list-style: none;
 }
 
-.nav__items button{
-        position: relative;
-        float: right;
-        margin-right: 20px ;
-        /* color: #f5ba13; */
-        border: none;
-        outline: none;
-        cursor: pointer;
-        border-radius: 7px;
-      
+button {
+    position: relative;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: hotpink;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
 }
 
-.nav__items input{
+.nav__items input {
     position: relative;
     float: right;
-    margin-right: 100px ;
+    margin-right: 100px;
     height: 25px;
     border: none;
     outline: none;
     border-radius: 7px;
-  
 }
 
-#nav li a {
+/* #nav li a {
 		display: block;
 		padding: 8px 15px;
 		text-decoration: none;
 		font-weight: bold;
 		color: #069;
-		border-right: 1px solid #ccc; 
-        
-    }
-    
-.heading{
+		border-right: 1px solid #ccc;   
+    } */
+
+.heading {
     color: white;
     margin-left: 5%;
 }
-   
-
-.add_button {
-background-color: hotpink;
-color: white;
-cursor: pointer;
-padding: 10px;
-border: none;
-outline: none;
-font-size: 15px;
-}
-

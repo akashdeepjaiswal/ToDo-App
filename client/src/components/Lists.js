@@ -5,7 +5,8 @@ import Note from "./Note";
 
 function Lists(props) {
     
-    return (                    
+    // if(props.showList){
+    return (     
         <div className="content__lists">  
             {
                 props.list.map((item) => (
@@ -21,12 +22,16 @@ function Lists(props) {
                                     props.delete_Note(id)} 
                                 }}   
                         />
-                       
                     </div>
-      ))}
-      </div>
-    
+                    ))    
+            }
+        </div>
     )
 }
+// else{
+//     return (<h1>No List found</h1>)
+// }
+//}
+
 
 export default Lists;

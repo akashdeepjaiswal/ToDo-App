@@ -6,7 +6,17 @@ function Navbar(props) {
 
   return (
     <div id="nav" className="container" >
-     <h2 className="heading"><i class="far fa-clipboard"></i> Keep your Daily Notes</h2>
+     {/* <ul className="nav__items">
+        <button 
+          onClick= { ()=> props.show_List() }
+          className="toggle_button" 
+          >
+          Toggle List
+        </button>   
+        </ul>  */}
+
+        <h2 className="heading"><i class="far fa-clipboard"></i> Keep your Daily Notes</h2>
+     
         <ul className="nav__items">
          <button 
          onClick= { ()=> props.add_Note(true) }
@@ -15,6 +25,7 @@ function Navbar(props) {
          New Note
         
          </button>
+        
         </ul>  
     </div>
   );
@@ -22,17 +33,3 @@ function Navbar(props) {
 
 export default Navbar;
 
-
-
-
-
-
-//please ignore
-{/* <ul className="nav__items">
-<li>
-  <input
-    key="random1"
-    placeholder="search notes"    
-  />
-</li>
-</ul>    */}
