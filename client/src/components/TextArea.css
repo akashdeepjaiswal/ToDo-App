@@ -2,16 +2,57 @@
         background-color: #ffffd2;
         flex: 1;
         height: 90vh;
+        
     }
     
 .content__textArea form{
+  /* display: flex;
+  flex-direction: column; */
     margin-top: 5%;
     padding-bottom: 2rem ;
     border-radius: 10px;
     max-width: 70vh;
-    height: 50vh;
+    max-height: 50vh;
     background-color: #ffde7d;
-}    
+}
+
+label {
+  padding: 2px 12px 2px 0;
+  display: inline-block;
+}
+
+
+.col-25 { 
+  margin-top: 6px;
+  padding-top: 5%;
+}  
+
+.col-75 input,textarea{
+  /* position: relative; */
+  width: 60%;
+  margin-top: 6px;
+  background-color: white;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 15px;
+}
+
+.col-75 input{
+  height: 2em;
+  font-weight: bold;
+  /* height: 69% ; */
+}
+
+.content__textArea button{
+  margin: 5%;
+  border-radius: 5px;
+  background-color: darkslategrey;
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+  font-size: 15px;
+  border-style: none;
+}
 
 .textarea_container{
     /* background-color: lightsteelblue; */
@@ -20,6 +61,7 @@
     margin : 1% 4%;
 
 }
+
 .textarea_note_display{
 
     padding: 2rem;
@@ -53,41 +95,7 @@
   border-radius: 7px;
 } */
 
-label {
-    padding: 2px 12px 2px 0;
-    display: inline-block;
-  }
 
-  
-  .col-25 { 
-    margin-top: 6px;
-    padding-top: 5%;
-  }  
-
-  .col-75 input,textarea{
-    width: 60%;
-    margin-top: 6px;
-    background-color: white;
-    border-radius: 10px;
-    border-style: none;
-    font-size: 15px;
-  }
-
-  .col-75 input{
-    height: 2rem;
-    font-weight: bold;
-  }
-
-  .content__textArea button{
-    margin: 5%;
-    border-radius: 5px;
-    background-color: darkslategrey;
-    color: white;
-    cursor: pointer;
-    padding: 7px;
-    font-size: 15px;
-    border-style: none;
-  }
 
 
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
